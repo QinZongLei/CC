@@ -25,6 +25,12 @@
     [self.view addSubview:myLabel];
     
   
+    UIButton*bt=[UIButton buttonWithType:(UIButtonTypeCustom)];
+    bt.frame=CGRectMake(100, 200, 50, 50);
+    [bt setTitle:@"按钮" forState:UIControlStateNormal];
+    [bt setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [bt addTarget:self action:@selector(btClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:bt];
     
 }
 
